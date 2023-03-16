@@ -20,7 +20,7 @@ async def echo(message: types.Message):
     await message.reply('Вы обратились к справке бота.')
 
  
-@dp.message_handler(commands=['Привет'])
+@dp.message_handler(text=['Привет'])
 async def echo(message: types.Message):
     await message.reply("Приветствую тебя человек")
 
